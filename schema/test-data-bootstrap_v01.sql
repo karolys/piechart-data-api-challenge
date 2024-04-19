@@ -1,0 +1,43 @@
+INSERT INTO workers (username, hourly_wage) VALUES ('Alice Johnson', 15.75);
+INSERT INTO workers (username, hourly_wage) VALUES ('Bob Smith', 18.50);
+INSERT INTO workers (username, hourly_wage) VALUES ('Carmen Lopez', 25.00);
+INSERT INTO workers (username, hourly_wage) VALUES ('David Lee', 22.25);
+INSERT INTO workers (username, hourly_wage) VALUES ('Eva Santos', 19.40);
+
+INSERT INTO locations (name) VALUES ('California');
+INSERT INTO locations (name) VALUES ('Arizona');
+INSERT INTO locations (name) VALUES ('Colorado');
+INSERT INTO locations (name) VALUES ('New York');
+INSERT INTO locations (name) VALUES ('Washington');
+
+INSERT INTO tasks (description, location_id) VALUES ('Inventory Management', 1);
+INSERT INTO tasks (description, location_id) VALUES ('Hardware Maintenance', 1);
+INSERT INTO tasks (description, location_id) VALUES ('Product Testing', 2);
+INSERT INTO tasks (description, location_id) VALUES ('Data Analysis', 3);
+INSERT INTO tasks (description, location_id) VALUES ('Assembly Line Oversight', 4);
+INSERT INTO tasks (description, location_id) VALUES ('Order Fulfillment', 5);
+
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3600, 1, 1, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (4500, 1, 2, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (1800, 2, 3, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (2400, 2, 4, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3600, 3, 5, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (1200, 3, 1, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3000, 4, 2, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (4200, 4, 3, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (2700, 5, 4, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3000, 5, 5, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3600, 1, 1, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (1800, 1, 2, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (4200, 2, 3, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3600, 2, 4, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (4800, 3, 5, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (2400, 3, 1, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3600, 4, 2, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (1800, 4, 3, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (5400, 5, 4, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (6000, 5, 5, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (3200, 6, 1, 0);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (2100, 6, 2, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (1800, 6, 3, 1);
+INSERT INTO logged_time (time_seconds, task_id, worker_id, is_task_complete) VALUES (2600, 6, 4, 0);

@@ -18,9 +18,11 @@ CREATE TABLE workers (
   hourly_wage DECIMAL(5, 2) NOT NULL
 ) ENGINE=INNODB;
 
+drop table if exists logged_time;
 CREATE TABLE logged_time (
   id INT(11) AUTO_INCREMENT PRIMARY KEY,
   time_seconds INT(11) NOT NULL,
+  is_task_complete TINYINT(1) NOT NULL,
 
   task_id INT(11) NOT NULL,
   worker_id INT(11) NOT NULL,
